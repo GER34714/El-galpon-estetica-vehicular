@@ -1,0 +1,1135 @@
+<!-- PARTE 1/2 -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Galpón Estética Vehicular | Detailing en Lanús</title>
+  <meta name="description" content="Lavado detallado, limpieza interior, lustrado y tratamiento de pintura. Turnos por WhatsApp. Lanús, Buenos Aires." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="El Galpón Estética Vehicular | Detailing en Lanús" />
+  <meta property="og:description" content="Lavado detallado, interior, lustrado y tratamiento de pintura. Turnos por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1605559424843-9e4c5d6c0c6f?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="El Galpón Estética Vehicular | Detailing en Lanús" />
+  <meta name="twitter:description" content="Turnos por WhatsApp. Lavado detallado, interior y tratamiento de pintura." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1605559424843-9e4c5d6c0c6f?q=80&w=1600&auto=format&fit=crop" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b0d12;
+      --bg2:#0f1420;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --text:#e8ebf3;
+      --muted:rgba(232,235,243,.72);
+      --line:rgba(255,255,255,.12);
+      --brand:#39ff88;
+      --brand2:#38bdf8;
+      --warn:#fbbf24;
+      --shadow:0 18px 60px rgba(0,0,0,.45);
+      --radius:18px;
+      --radius2:26px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:
+        radial-gradient(1200px 800px at 10% 0%, rgba(56,189,248,.18), transparent 55%),
+        radial-gradient(900px 600px at 90% 10%, rgba(57,255,136,.14), transparent 55%),
+        linear-gradient(180deg, var(--bg), #07080b 65%, var(--bg));
+      color:var(--text);
+      overflow-x:hidden;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 16px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border-radius:999px;
+      font-weight:700;
+      transition:transform .15s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+    }
+    .btn:hover{transform:translateY(-1px); border-color:rgba(255,255,255,.22)}
+    .btn.primary{
+      border-color:rgba(57,255,136,.35);
+      background:linear-gradient(180deg, rgba(57,255,136,.18), rgba(57,255,136,.06));
+      box-shadow:0 14px 50px rgba(57,255,136,.12);
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      border-radius:999px;
+      font-weight:700;
+      color:var(--muted);
+    }
+    .pill i{
+      width:10px; height:10px; border-radius:999px;
+      background:linear-gradient(90deg, var(--brand), var(--brand2));
+      box-shadow:0 0 18px rgba(57,255,136,.28);
+    }
+
+    /* NAV */
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background:rgba(10,12,18,.55);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+    .logo{
+      width:42px; height:42px; border-radius:14px;
+      background:
+        radial-gradient(12px 12px at 28% 30%, rgba(255,255,255,.35), transparent 55%),
+        linear-gradient(135deg, rgba(57,255,136,.95), rgba(56,189,248,.95));
+      box-shadow:0 18px 60px rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .navlinks{
+      display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    }
+    .navlinks a{
+      padding:10px 12px;
+      border-radius:999px;
+      color:rgba(232,235,243,.86);
+      border:1px solid transparent;
+    }
+    .navlinks a:hover{
+      border-color:rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+    }
+
+    /* HERO */
+    .hero{
+      position:relative;
+      padding:44px 0 18px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .heroCard{
+      border-radius:var(--radius2);
+      border:1px solid rgba(255,255,255,.12);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .heroMain{
+      padding:26px;
+      min-height:320px;
+      display:flex; flex-direction:column; justify-content:space-between;
+    }
+    .heroMain:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(600px 280px at 20% 10%, rgba(56,189,248,.18), transparent 55%),
+        radial-gradient(520px 300px at 85% 20%, rgba(57,255,136,.16), transparent 55%);
+      pointer-events:none;
+    }
+    .heroMain > *{position:relative}
+    h1{
+      font-size:clamp(28px, 4vw, 44px);
+      line-height:1.05;
+      margin:12px 0 10px;
+      letter-spacing:-.6px;
+    }
+    .lead{
+      color:var(--muted);
+      font-size:clamp(14px, 1.6vw, 16px);
+      line-height:1.6;
+      margin:0 0 18px;
+      max-width:54ch;
+    }
+    .heroCtas{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+    .kpis{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .kpi{
+      flex:1 1 180px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+      padding:12px 12px;
+    }
+    .kpi b{display:block; font-size:14px}
+    .kpi span{display:block; color:var(--muted); font-size:12px; margin-top:4px}
+
+    .heroSide{
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      gap:18px;
+    }
+    .photo{
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.68)),
+        url("https://images.unsplash.com/photo-1593032457868-e3cb8c2d5a2b?q=80&w=1600&auto=format&fit=crop");
+      background-size:cover;
+      background-position:center;
+      min-height:210px;
+      padding:18px;
+      display:flex; flex-direction:column; justify-content:flex-end;
+    }
+    .photo h3{margin:0 0 6px; font-size:18px}
+    .photo p{margin:0; color:rgba(232,235,243,.76); line-height:1.5; font-size:13px}
+
+    .info{
+      padding:18px;
+      display:flex; flex-direction:column; gap:12px;
+    }
+    .infoRow{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+    }
+    .ico{
+      width:40px; height:40px; border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background:linear-gradient(135deg, rgba(57,255,136,.14), rgba(56,189,248,.14));
+      display:grid; place-items:center;
+      flex:0 0 auto;
+    }
+    .infoRow b{display:block; font-size:13px}
+    .infoRow span{display:block; font-size:12px; color:var(--muted); margin-top:4px}
+
+    /* SECTIONS */
+    section{padding:26px 0}
+    .sectionHead{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:14px; flex-wrap:wrap;
+      margin-bottom:14px;
+    }
+    .sectionHead h2{
+      margin:0;
+      font-size:22px;
+      letter-spacing:-.3px;
+    }
+    .sectionHead p{
+      margin:0;
+      color:var(--muted);
+      max-width:60ch;
+      line-height:1.6;
+      font-size:13px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:14px;
+    }
+    .card{
+      grid-column: span 4;
+      border-radius:var(--radius);
+      border:1px solid rgba(255,255,255,.12);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      padding:16px;
+      position:relative;
+      overflow:hidden;
+    }
+    .card:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:radial-gradient(320px 180px at 20% 10%, rgba(56,189,248,.10), transparent 60%);
+      pointer-events:none;
+    }
+    .card > *{position:relative}
+    .card h3{margin:0 0 6px; font-size:16px}
+    .card p{margin:0; color:var(--muted); line-height:1.6; font-size:13px}
+    .tag{
+      display:inline-flex; align-items:center; gap:8px;
+      margin-top:12px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+      font-size:12px;
+      color:rgba(232,235,243,.80);
+      font-weight:700;
+    }
+    .tag small{color:rgba(232,235,243,.70); font-weight:600}
+
+    .priceGrid .card{grid-column:span 4}
+    .price{
+      display:flex; align-items:baseline; gap:8px; margin:10px 0 0;
+      font-weight:800;
+      font-size:20px;
+    }
+    .price small{font-size:12px; font-weight:700; color:var(--muted)}
+    ul.clean{margin:10px 0 0; padding:0 0 0 16px; color:rgba(232,235,243,.80); line-height:1.7; font-size:13px}
+    .badgeHot{
+      position:absolute; top:14px; right:14px;
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      color:#07110b;
+      background:linear-gradient(90deg, var(--brand), #a7f3d0);
+      border:1px solid rgba(0,0,0,.2);
+    }
+
+    /* Gallery */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:12px;
+    }
+    .shot{
+      grid-column:span 4;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      overflow:hidden;
+      min-height:160px;
+      position:relative;
+    }
+    .shot .ph{
+      position:absolute; inset:0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+        url("https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1600&auto=format&fit=crop");
+      background-size:cover; background-position:center;
+      filter:saturate(1.1) contrast(1.02);
+    }
+    .shot:nth-child(2) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1621992239020-3f62e8b0a9c3?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot:nth-child(3) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot:nth-child(4) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot:nth-child(5) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot:nth-child(6) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot .cap{
+      position:absolute; left:12px; bottom:12px; right:12px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+    }
+    .chip{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(0,0,0,.35);
+      font-size:12px;
+      font-weight:800;
+    }
+
+    /* CTA */
+    .cta{
+      border-radius:var(--radius2);
+      border:1px solid rgba(255,255,255,.12);
+      background:
+        radial-gradient(800px 340px at 20% 10%, rgba(56,189,248,.14), transparent 55%),
+        radial-gradient(760px 340px at 85% 20%, rgba(57,255,136,.12), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      padding:18px;
+      box-shadow:var(--shadow);
+      display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;
+    }
+    .cta h3{margin:0; font-size:18px}
+    .cta p{margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.6}
+
+    /* Footer */
+    footer{
+      margin-top:10px;
+      border-top:1px solid rgba(255,255,255,.08);
+      background:rgba(10,12,18,.45);
+      padding:18px 0 64px; /* deja espacio para el botón de WhatsApp */
+    }
+    .foot{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;
+    }
+    .foot small{color:rgba(232,235,243,.70); line-height:1.6}
+    .credit a{color:rgba(232,235,243,.88); text-decoration:underline; text-underline-offset:3px}
+
+    /* WhatsApp floating */
+    .wa{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      z-index:80;
+      display:flex; align-items:center; gap:10px;
+      padding:12px 14px;
+      border-radius:999px;
+      border:1px solid rgba(57,255,136,.40);
+      background:linear-gradient(180deg, rgba(57,255,136,.18), rgba(57,255,136,.06));
+      box-shadow:0 18px 60px rgba(0,0,0,.45);
+      font-weight:800;
+    }
+    .wa svg{width:20px; height:20px}
+    .wa span{font-size:13px}
+    .wa:hover{transform:translateY(-1px)}
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns:1fr}
+      .heroSide{grid-template-rows:auto}
+      .photo{min-height:220px}
+    }
+    @media (max-width: 860px){
+      .card{grid-column:span 6}
+      .shot{grid-column:span 6}
+    }
+    @media (max-width: 520px){
+      .navlinks{display:none}
+      .heroMain{padding:18px}
+      .card{grid-column:span 12}
+      .shot{grid-column:span 12}
+      footer{padding-bottom:78px}
+      .wa{left:16px; right:16px; justify-content:center}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand" aria-label="El Galpón Estética Vehicular">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <div style="font-size:14px; font-weight:800; line-height:1.1">EL GALPÓN</div>
+            <div style="font-size:12px; color:rgba(232,235,243,.72); font-weight:700">Estética Vehicular • Lanús</div>
+          </div>
+        </div>
+
+        <nav class="navlinks" aria-label="Secciones">
+          <a href="#servicios">Servicios</a>
+          <a href="#planes">Planes</a>
+          <a href="#trabajos">Trabajos</a>
+          <a href="#ubicacion">Ubicación</a>
+        </nav>
+
+        <a class="btn primary" href="#turno">Pedir turno</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div class="heroGrid">
+        <div class="heroCard">
+          <div class="heroMain">
+            <div>
+              <span class="pill"><i></i> Turnos por WhatsApp • Atención rápida</span>
+              <h1>Detailing que se nota: brillo, limpieza y cuidado real.</h1>
+              <p class="lead">
+                Lavado detallado, limpieza interior, lustrado y tratamiento para la pintura.
+                Dejamos tu auto con terminación prolija y lista para lucir.
+              </p>
+
+              <div class="heroCtas" id="turno">
+                <a class="btn primary" id="ctaWaTop" href="#">
+                  <span>💬</span> Consultar por WhatsApp
+                </a>
+                <a class="btn" href="#planes">Ver planes</a>
+                <a class="btn" href="#trabajos">Ver trabajos</a>
+              </div>
+
+              <div class="kpis" aria-label="beneficios">
+                <div class="kpi">
+                  <b>✔ Trabajo detallado</b>
+                  <span>Terminación cuidada, sin apuro.</span>
+                </div>
+                <div class="kpi">
+                  <b>✔ Turnos coordinados</b>
+                  <span>Te confirmamos horario por WhatsApp.</span>
+                </div>
+                <div class="kpi">
+                  <b>✔ Lanús</b>
+                  <span>Emilio Castro 2130, Lanús.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroSide">
+          <div class="heroCard photo" role="img" aria-label="Auto con brillo y detailing">
+            <h3>Brillo + protección</h3>
+            <p>Tratamientos para mejorar la pintura y mantenerla.</p>
+          </div>
+
+          <div class="heroCard info">
+            <div class="infoRow">
+              <div class="ico" aria-hidden="true">📍</div>
+              <div>
+                <b>Dirección</b>
+                <span>Emilio Castro 2130, Lanús, Buenos Aires</span>
+              </div>
+            </div>
+            <div class="infoRow">
+              <div class="ico" aria-hidden="true">📞</div>
+              <div>
+                <b>Teléfono</b>
+                <span>11-2850-6449</span>
+              </div>
+            </div>
+            <div class="infoRow">
+              <div class="ico" aria-hidden="true">🧼</div>
+              <div>
+                <b>Servicios</b>
+                <span>Lavado detallado • Interior • Lustrado • Pintura</span>
+              </div>
+            </div>
+            <a class="btn primary" id="ctaWaCard" href="#" style="justify-content:center">
+              Consultar disponibilidad
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="servicios">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2>Servicios</h2>
+            <p>Todo pensado para que el cliente entienda rápido qué incluye y te pregunte lo mínimo por DM.</p>
+          </div>
+          <a class="btn" href="#turno">Pedir turno</a>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Lavado detallado</h3>
+            <p>Limpieza exterior completa con enfoque en detalles. Ideal para mantenimiento y “dejarlo como nuevo”.</p>
+            <div class="tag">✅ Recomendado <small>para mantenimiento</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Limpieza de interior</h3>
+            <p>Butacas, plásticos, alfombras y sectores difíciles. Se coordina según el estado del interior.</p>
+            <div class="tag">🧽 Interior <small>profundo</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Lustrado y tratamiento</h3>
+            <p>Mejora de brillo y apariencia. Tratamientos para cuidar la pintura y sumar protección.</p>
+            <div class="tag">✨ Brillo <small>+ protección</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Tratamiento de pintura</h3>
+            <p>Corrección y cuidado de pintura según el caso. Te asesoramos qué conviene para tu auto.</p>
+            <div class="tag">🎯 Según estado <small>del vehículo</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Paquetes por tipo de auto</h3>
+            <p>Podés armar paquetes por tamaño (chico/mediano/grande) para responder rápido con un valor base.</p>
+            <div class="tag">📦 Paquetes <small>claros</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Turnos y tiempos</h3>
+            <p>Se coordina por WhatsApp. Te pasamos el tiempo estimado según el servicio y el estado del auto.</p>
+            <div class="tag">⏱ Coordinación <small>rápida</small></div>
+          </article>
+        </div><!
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Galpón Estética Vehicular | Detailing en Lanús</title>
+  <meta name="description" content="Lavado detallado, limpieza interior, lustrado y tratamiento de pintura. Turnos por WhatsApp. Lanús, Buenos Aires." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="El Galpón Estética Vehicular | Detailing en Lanús" />
+  <meta property="og:description" content="Lavado detallado, interior, lustrado y tratamiento de pintura. Turnos por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1605559424843-9e4c5d6c0c6f?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="El Galpón Estética Vehicular | Detailing en Lanús" />
+  <meta name="twitter:description" content="Turnos por WhatsApp. Lavado detallado, interior y tratamiento de pintura." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1605559424843-9e4c5d6c0c6f?q=80&w=1600&auto=format&fit=crop" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b0d12;
+      --bg2:#0f1420;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --text:#e8ebf3;
+      --muted:rgba(232,235,243,.72);
+      --line:rgba(255,255,255,.12);
+      --brand:#39ff88;
+      --brand2:#38bdf8;
+      --warn:#fbbf24;
+      --shadow:0 18px 60px rgba(0,0,0,.45);
+      --radius:18px;
+      --radius2:26px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:
+        radial-gradient(1200px 800px at 10% 0%, rgba(56,189,248,.18), transparent 55%),
+        radial-gradient(900px 600px at 90% 10%, rgba(57,255,136,.14), transparent 55%),
+        linear-gradient(180deg, var(--bg), #07080b 65%, var(--bg));
+      color:var(--text);
+      overflow-x:hidden;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 16px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border-radius:999px;
+      font-weight:700;
+      transition:transform .15s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+    }
+    .btn:hover{transform:translateY(-1px); border-color:rgba(255,255,255,.22)}
+    .btn.primary{
+      border-color:rgba(57,255,136,.35);
+      background:linear-gradient(180deg, rgba(57,255,136,.18), rgba(57,255,136,.06));
+      box-shadow:0 14px 50px rgba(57,255,136,.12);
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      border-radius:999px;
+      font-weight:700;
+      color:var(--muted);
+    }
+    .pill i{
+      width:10px; height:10px; border-radius:999px;
+      background:linear-gradient(90deg, var(--brand), var(--brand2));
+      box-shadow:0 0 18px rgba(57,255,136,.28);
+    }
+
+    /* NAV */
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background:rgba(10,12,18,.55);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+    .logo{
+      width:42px; height:42px; border-radius:14px;
+      background:
+        radial-gradient(12px 12px at 28% 30%, rgba(255,255,255,.35), transparent 55%),
+        linear-gradient(135deg, rgba(57,255,136,.95), rgba(56,189,248,.95));
+      box-shadow:0 18px 60px rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .navlinks{
+      display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    }
+    .navlinks a{
+      padding:10px 12px;
+      border-radius:999px;
+      color:rgba(232,235,243,.86);
+      border:1px solid transparent;
+    }
+    .navlinks a:hover{
+      border-color:rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+    }
+
+    /* HERO */
+    .hero{
+      position:relative;
+      padding:44px 0 18px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .heroCard{
+      border-radius:var(--radius2);
+      border:1px solid rgba(255,255,255,.12);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .heroMain{
+      padding:26px;
+      min-height:320px;
+      display:flex; flex-direction:column; justify-content:space-between;
+    }
+    .heroMain:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(600px 280px at 20% 10%, rgba(56,189,248,.18), transparent 55%),
+        radial-gradient(520px 300px at 85% 20%, rgba(57,255,136,.16), transparent 55%);
+      pointer-events:none;
+    }
+    .heroMain > *{position:relative}
+    h1{
+      font-size:clamp(28px, 4vw, 44px);
+      line-height:1.05;
+      margin:12px 0 10px;
+      letter-spacing:-.6px;
+    }
+    .lead{
+      color:var(--muted);
+      font-size:clamp(14px, 1.6vw, 16px);
+      line-height:1.6;
+      margin:0 0 18px;
+      max-width:54ch;
+    }
+    .heroCtas{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+    .kpis{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .kpi{
+      flex:1 1 180px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+      padding:12px 12px;
+    }
+    .kpi b{display:block; font-size:14px}
+    .kpi span{display:block; color:var(--muted); font-size:12px; margin-top:4px}
+
+    .heroSide{
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      gap:18px;
+    }
+    .photo{
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.68)),
+        url("https://images.unsplash.com/photo-1593032457868-e3cb8c2d5a2b?q=80&w=1600&auto=format&fit=crop");
+      background-size:cover;
+      background-position:center;
+      min-height:210px;
+      padding:18px;
+      display:flex; flex-direction:column; justify-content:flex-end;
+    }
+    .photo h3{margin:0 0 6px; font-size:18px}
+    .photo p{margin:0; color:rgba(232,235,243,.76); line-height:1.5; font-size:13px}
+
+    .info{
+      padding:18px;
+      display:flex; flex-direction:column; gap:12px;
+    }
+    .infoRow{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+    }
+    .ico{
+      width:40px; height:40px; border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background:linear-gradient(135deg, rgba(57,255,136,.14), rgba(56,189,248,.14));
+      display:grid; place-items:center;
+      flex:0 0 auto;
+    }
+    .infoRow b{display:block; font-size:13px}
+    .infoRow span{display:block; font-size:12px; color:var(--muted); margin-top:4px}
+
+    /* SECTIONS */
+    section{padding:26px 0}
+    .sectionHead{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:14px; flex-wrap:wrap;
+      margin-bottom:14px;
+    }
+    .sectionHead h2{
+      margin:0;
+      font-size:22px;
+      letter-spacing:-.3px;
+    }
+    .sectionHead p{
+      margin:0;
+      color:var(--muted);
+      max-width:60ch;
+      line-height:1.6;
+      font-size:13px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:14px;
+    }
+    .card{
+      grid-column: span 4;
+      border-radius:var(--radius);
+      border:1px solid rgba(255,255,255,.12);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      padding:16px;
+      position:relative;
+      overflow:hidden;
+    }
+    .card:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:radial-gradient(320px 180px at 20% 10%, rgba(56,189,248,.10), transparent 60%);
+      pointer-events:none;
+    }
+    .card > *{position:relative}
+    .card h3{margin:0 0 6px; font-size:16px}
+    .card p{margin:0; color:var(--muted); line-height:1.6; font-size:13px}
+    .tag{
+      display:inline-flex; align-items:center; gap:8px;
+      margin-top:12px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+      font-size:12px;
+      color:rgba(232,235,243,.80);
+      font-weight:700;
+    }
+    .tag small{color:rgba(232,235,243,.70); font-weight:600}
+
+    .priceGrid .card{grid-column:span 4}
+    .price{
+      display:flex; align-items:baseline; gap:8px; margin:10px 0 0;
+      font-weight:800;
+      font-size:20px;
+    }
+    .price small{font-size:12px; font-weight:700; color:var(--muted)}
+    ul.clean{margin:10px 0 0; padding:0 0 0 16px; color:rgba(232,235,243,.80); line-height:1.7; font-size:13px}
+    .badgeHot{
+      position:absolute; top:14px; right:14px;
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      color:#07110b;
+      background:linear-gradient(90deg, var(--brand), #a7f3d0);
+      border:1px solid rgba(0,0,0,.2);
+    }
+
+    /* Gallery */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:12px;
+    }
+    .shot{
+      grid-column:span 4;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      overflow:hidden;
+      min-height:160px;
+      position:relative;
+    }
+    .shot .ph{
+      position:absolute; inset:0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+        url("https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1600&auto=format&fit=crop");
+      background-size:cover; background-position:center;
+      filter:saturate(1.1) contrast(1.02);
+    }
+    .shot:nth-child(2) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1621992239020-3f62e8b0a9c3?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot:nth-child(3) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot:nth-child(4) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot:nth-child(5) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot:nth-child(6) .ph{background-image:
+      linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.68)),
+      url("https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1600&auto=format&fit=crop");
+    }
+    .shot .cap{
+      position:absolute; left:12px; bottom:12px; right:12px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+    }
+    .chip{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(0,0,0,.35);
+      font-size:12px;
+      font-weight:800;
+    }
+
+    /* CTA */
+    .cta{
+      border-radius:var(--radius2);
+      border:1px solid rgba(255,255,255,.12);
+      background:
+        radial-gradient(800px 340px at 20% 10%, rgba(56,189,248,.14), transparent 55%),
+        radial-gradient(760px 340px at 85% 20%, rgba(57,255,136,.12), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      padding:18px;
+      box-shadow:var(--shadow);
+      display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;
+    }
+    .cta h3{margin:0; font-size:18px}
+    .cta p{margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.6}
+
+    /* Footer */
+    footer{
+      margin-top:10px;
+      border-top:1px solid rgba(255,255,255,.08);
+      background:rgba(10,12,18,.45);
+      padding:18px 0 64px; /* deja espacio para el botón de WhatsApp */
+    }
+    .foot{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;
+    }
+    .foot small{color:rgba(232,235,243,.70); line-height:1.6}
+    .credit a{color:rgba(232,235,243,.88); text-decoration:underline; text-underline-offset:3px}
+
+    /* WhatsApp floating */
+    .wa{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      z-index:80;
+      display:flex; align-items:center; gap:10px;
+      padding:12px 14px;
+      border-radius:999px;
+      border:1px solid rgba(57,255,136,.40);
+      background:linear-gradient(180deg, rgba(57,255,136,.18), rgba(57,255,136,.06));
+      box-shadow:0 18px 60px rgba(0,0,0,.45);
+      font-weight:800;
+    }
+    .wa svg{width:20px; height:20px}
+    .wa span{font-size:13px}
+    .wa:hover{transform:translateY(-1px)}
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns:1fr}
+      .heroSide{grid-template-rows:auto}
+      .photo{min-height:220px}
+    }
+    @media (max-width: 860px){
+      .card{grid-column:span 6}
+      .shot{grid-column:span 6}
+    }
+    @media (max-width: 520px){
+      .navlinks{display:none}
+      .heroMain{padding:18px}
+      .card{grid-column:span 12}
+      .shot{grid-column:span 12}
+      footer{padding-bottom:78px}
+      .wa{left:16px; right:16px; justify-content:center}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand" aria-label="El Galpón Estética Vehicular">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <div style="font-size:14px; font-weight:800; line-height:1.1">EL GALPÓN</div>
+            <div style="font-size:12px; color:rgba(232,235,243,.72); font-weight:700">Estética Vehicular • Lanús</div>
+          </div>
+        </div>
+
+        <nav class="navlinks" aria-label="Secciones">
+          <a href="#servicios">Servicios</a>
+          <a href="#planes">Planes</a>
+          <a href="#trabajos">Trabajos</a>
+          <a href="#ubicacion">Ubicación</a>
+        </nav>
+
+        <a class="btn primary" href="#turno">Pedir turno</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div class="heroGrid">
+        <div class="heroCard">
+          <div class="heroMain">
+            <div>
+              <span class="pill"><i></i> Turnos por WhatsApp • Atención rápida</span>
+              <h1>Detailing que se nota: brillo, limpieza y cuidado real.</h1>
+              <p class="lead">
+                Lavado detallado, limpieza interior, lustrado y tratamiento para la pintura.
+                Dejamos tu auto con terminación prolija y lista para lucir.
+              </p>
+
+              <div class="heroCtas" id="turno">
+                <a class="btn primary" id="ctaWaTop" href="#">
+                  <span>💬</span> Consultar por WhatsApp
+                </a>
+                <a class="btn" href="#planes">Ver planes</a>
+                <a class="btn" href="#trabajos">Ver trabajos</a>
+              </div>
+
+              <div class="kpis" aria-label="beneficios">
+                <div class="kpi">
+                  <b>✔ Trabajo detallado</b>
+                  <span>Terminación cuidada, sin apuro.</span>
+                </div>
+                <div class="kpi">
+                  <b>✔ Turnos coordinados</b>
+                  <span>Te confirmamos horario por WhatsApp.</span>
+                </div>
+                <div class="kpi">
+                  <b>✔ Lanús</b>
+                  <span>Emilio Castro 2130, Lanús.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroSide">
+          <div class="heroCard photo" role="img" aria-label="Auto con brillo y detailing">
+            <h3>Brillo + protección</h3>
+            <p>Tratamientos para mejorar la pintura y mantenerla.</p>
+          </div>
+
+          <div class="heroCard info">
+            <div class="infoRow">
+              <div class="ico" aria-hidden="true">📍</div>
+              <div>
+                <b>Dirección</b>
+                <span>Emilio Castro 2130, Lanús, Buenos Aires</span>
+              </div>
+            </div>
+            <div class="infoRow">
+              <div class="ico" aria-hidden="true">📞</div>
+              <div>
+                <b>Teléfono</b>
+                <span>11-2850-6449</span>
+              </div>
+            </div>
+            <div class="infoRow">
+              <div class="ico" aria-hidden="true">🧼</div>
+              <div>
+                <b>Servicios</b>
+                <span>Lavado detallado • Interior • Lustrado • Pintura</span>
+              </div>
+            </div>
+            <a class="btn primary" id="ctaWaCard" href="#" style="justify-content:center">
+              Consultar disponibilidad
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="servicios">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2>Servicios</h2>
+            <p>Todo pensado para que el cliente entienda rápido qué incluye y te pregunte lo mínimo por DM.</p>
+          </div>
+          <a class="btn" href="#turno">Pedir turno</a>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Lavado detallado</h3>
+            <p>Limpieza exterior completa con enfoque en detalles. Ideal para mantenimiento y “dejarlo como nuevo”.</p>
+            <div class="tag">✅ Recomendado <small>para mantenimiento</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Limpieza de interior</h3>
+            <p>Butacas, plásticos, alfombras y sectores difíciles. Se coordina según el estado del interior.</p>
+            <div class="tag">🧽 Interior <small>profundo</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Lustrado y tratamiento</h3>
+            <p>Mejora de brillo y apariencia. Tratamientos para cuidar la pintura y sumar protección.</p>
+            <div class="tag">✨ Brillo <small>+ protección</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Tratamiento de pintura</h3>
+            <p>Corrección y cuidado de pintura según el caso. Te asesoramos qué conviene para tu auto.</p>
+            <div class="tag">🎯 Según estado <small>del vehículo</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Paquetes por tipo de auto</h3>
+            <p>Podés armar paquetes por tamaño (chico/mediano/grande) para responder rápido con un valor base.</p>
+            <div class="tag">📦 Paquetes <small>claros</small></div>
+          </article>
+
+          <article class="card">
+            <h3>Turnos y tiempos</h3>
+            <p>Se coordina por WhatsApp. Te pasamos el tiempo estimado según el servicio y el estado del auto.</p>
+            <div class="tag">⏱ Coordinación <small>rápida</small></div>
+          </article>
+        </div>
