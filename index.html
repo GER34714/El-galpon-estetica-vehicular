@@ -127,16 +127,8 @@
     }
 
     /* HERO */
-    .hero{
-      position:relative;
-      padding:44px 0 18px;
-    }
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:18px;
-      align-items:stretch;
-    }
+    .hero{position:relative; padding:44px 0 18px;}
+    .heroGrid{display:grid; grid-template-columns:1.15fr .85fr; gap:18px; align-items:stretch;}
     .heroCard{
       border-radius:var(--radius2);
       border:1px solid rgba(255,255,255,.12);
@@ -173,10 +165,7 @@
       max-width:54ch;
     }
     .heroCtas{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
-    .kpis{
-      display:flex; gap:10px; flex-wrap:wrap;
-      margin-top:16px;
-    }
+    .kpis{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;}
     .kpi{
       flex:1 1 180px;
       border-radius:16px;
@@ -187,17 +176,12 @@
     .kpi b{display:block; font-size:14px}
     .kpi span{display:block; color:var(--muted); font-size:12px; margin-top:4px}
 
-    .heroSide{
-      display:grid;
-      grid-template-rows: 1fr 1fr;
-      gap:18px;
-    }
+    .heroSide{display:grid; grid-template-rows:1fr 1fr; gap:18px;}
     .photo{
       background:
         linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.68)),
         url("https://images.unsplash.com/photo-1593032457868-e3cb8c2d5a2b?q=80&w=1600&auto=format&fit=crop");
-      background-size:cover;
-      background-position:center;
+      background-size:cover; background-position:center;
       min-height:210px;
       padding:18px;
       display:flex; flex-direction:column; justify-content:flex-end;
@@ -205,10 +189,7 @@
     .photo h3{margin:0 0 6px; font-size:18px}
     .photo p{margin:0; color:rgba(232,235,243,.76); line-height:1.5; font-size:13px}
 
-    .info{
-      padding:18px;
-      display:flex; flex-direction:column; gap:12px;
-    }
+    .info{padding:18px; display:flex; flex-direction:column; gap:12px;}
     .infoRow{
       display:flex; gap:12px; align-items:flex-start;
       padding:12px;
@@ -232,23 +213,9 @@
       display:flex; align-items:flex-end; justify-content:space-between; gap:14px; flex-wrap:wrap;
       margin-bottom:14px;
     }
-    .sectionHead h2{
-      margin:0;
-      font-size:22px;
-      letter-spacing:-.3px;
-    }
-    .sectionHead p{
-      margin:0;
-      color:var(--muted);
-      max-width:60ch;
-      line-height:1.6;
-      font-size:13px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:14px;
-    }
+    .sectionHead h2{margin:0; font-size:22px; letter-spacing:-.3px;}
+    .sectionHead p{margin:0; color:var(--muted); max-width:60ch; line-height:1.6; font-size:13px;}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:14px;}
     .card{
       grid-column: span 4;
       border-radius:var(--radius);
@@ -281,11 +248,7 @@
     .tag small{color:rgba(232,235,243,.70); font-weight:600}
 
     .priceGrid .card{grid-column:span 4}
-    .price{
-      display:flex; align-items:baseline; gap:8px; margin:10px 0 0;
-      font-weight:800;
-      font-size:20px;
-    }
+    .price{display:flex; align-items:baseline; gap:8px; margin:10px 0 0; font-weight:800; font-size:20px;}
     .price small{font-size:12px; font-weight:700; color:var(--muted)}
     ul.clean{margin:10px 0 0; padding:0 0 0 16px; color:rgba(232,235,243,.80); line-height:1.7; font-size:13px}
     .badgeHot{
@@ -300,11 +263,7 @@
     }
 
     /* Gallery */
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:12px;
-    }
+    .gallery{display:grid; grid-template-columns:repeat(12,1fr); gap:12px;}
     .shot{
       grid-column:span 4;
       border-radius:18px;
@@ -370,6 +329,21 @@
     .cta h3{margin:0; font-size:18px}
     .cta p{margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.6}
 
+    /* MAP wrapper responsive: controla altura por breakpoint */
+    .mapWrap{
+      width:100%;
+      border-radius:var(--radius);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+    }
+    .mapWrap iframe{
+      width:100%;
+      height:320px;
+      border:0;
+      display:block;
+    }
+
     /* Footer */
     footer{
       margin-top:10px;
@@ -377,9 +351,7 @@
       background:rgba(10,12,18,.45);
       padding:18px 0 64px; /* deja espacio para el botón de WhatsApp */
     }
-    .foot{
-      display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;
-    }
+    .foot{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap;}
     .foot small{color:rgba(232,235,243,.70); line-height:1.6}
     .credit a{color:rgba(232,235,243,.88); text-decoration:underline; text-underline-offset:3px}
 
@@ -396,18 +368,22 @@
       background:linear-gradient(180deg, rgba(57,255,136,.18), rgba(57,255,136,.06));
       box-shadow:0 18px 60px rgba(0,0,0,.45);
       font-weight:800;
+      transition:transform .15s ease;
     }
     .wa svg{width:20px; height:20px}
     .wa span{font-size:13px}
     .wa:hover{transform:translateY(-1px)}
+
     @media (max-width: 980px){
       .heroGrid{grid-template-columns:1fr}
       .heroSide{grid-template-rows:auto}
       .photo{min-height:220px}
+      .mapWrap iframe{height:280px}
     }
     @media (max-width: 860px){
       .card{grid-column:span 6}
       .shot{grid-column:span 6}
+      .mapWrap iframe{height:260px}
     }
     @media (max-width: 520px){
       .navlinks{display:none}
@@ -416,6 +392,7 @@
       .shot{grid-column:span 12}
       footer{padding-bottom:78px}
       .wa{left:16px; right:16px; justify-content:center}
+      .mapWrap iframe{height:210px} /* 👈 más chico en móviles */
     }
   </style>
 </head>
@@ -561,12 +538,7 @@
           </article>
 
           <article class="card">
-            <h3>Turnos y tiempos</h3>
-            <p>Se coordina por WhatsApp. Te pasamos el tiempo estimado según el servicio y el estado del auto.</p>
-            <div class="tag">⏱ Coordinación <small>rápida</small></div>
-          </article>
-        </div>
-      <!-- PARTE 2/2 -->
+<!-- PARTE 2/2 -->
     <section id="ubicacion">
       <div class="wrap">
         <div class="sectionHead">
@@ -673,4 +645,4 @@
     // console.log("Tel:", PHONE_DISPLAY);
   </script>
 </body>
-    </html>
+</html>
