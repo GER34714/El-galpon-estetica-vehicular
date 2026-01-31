@@ -550,16 +550,15 @@
         </div>
 
         <div class="grid">
-          <div class="card" style="grid-column:span 7; padding:0; overflow:hidden">
-            <iframe
-              title="Mapa - Emilio Castro 2130, Lanús"
-              src="https://www.google.com/maps?q=Emilio%20Castro%202130%2C%20Lan%C3%BAs%2C%20Buenos%20Aires&output=embed"
-              width="100%"
-              height="320"
-              style="border:0; display:block"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+          <div class="card" style="grid-column:span 7; padding:0; background:transparent; border:0">
+            <div class="mapWrap" aria-label="Mapa">
+              <iframe
+                title="Mapa - Emilio Castro 2130, Lanús"
+                src="https://www.google.com/maps?q=Emilio%20Castro%202130%2C%20Lan%C3%BAs%2C%20Buenos%20Aires&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
 
           <div class="card" style="grid-column:span 5">
@@ -627,7 +626,7 @@
   <script>
     // ===== Config fácil (para demo) =====
     const PHONE_DISPLAY = "11-2850-6449";
-    const PHONE_WA = "5491128506449"; // +54 9 11 2850 6449 (formato wa.me)
+    const PHONE_WA = "5491128506449"; // +54 9 11 2850 6449
     const WA_MESSAGE = encodeURIComponent(
       "Hola! 👋 Quiero consultar por un turno en El Galpón Estética Vehicular. " +
       "Mi auto es: ____ . Me interesa: (interior / exterior / brillo). Gracias!"
@@ -640,9 +639,6 @@
       const el = document.getElementById(id);
       if (el) el.href = WA_LINK;
     });
-
-    // Mostrar teléfono en consola (por si querés)
-    // console.log("Tel:", PHONE_DISPLAY);
   </script>
 </body>
 </html>
